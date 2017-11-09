@@ -433,15 +433,25 @@ main.posts-listing .post-footer {
 }
 
 .widget.categories .item {
-  background: #fafafa;
+  /*background: #fafafa;
+  color: #777;*/
   padding: 10px;
-  color: #777;
   font-weight: 700;
 }
 
-.widget.categories .item:nth-of-type(2n+2) {
+/*.widget.categories .item:nth-of-type(2n+2) {
   background: none;
+  
+}*/
+
+.widget.categories .item:nth-child(odd) {
+  background: #333;
+  color: #fff;
 }
+
+.widget.categories .item:nth-child(even) {
+  background: #fff;
+  color: #333}
 
 .widget.categories .item a {
   color: inherit;
